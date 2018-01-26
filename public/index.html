@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Convargo</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>CSS/HTML Workshop with Convargo</title>
   </head>
   <body>
-    <div id="trucker">
+	<h1> CONVARGO </h1>
+	<h2>Estimer le prix d'une livraison : </h2>
+    </br>
+	
+	<div id="trucker">
+	<p>Informations sur le livreur : </p>
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
     </div>
+	</br>
     <div id="shipper">
+	<p>Informations sur l'expéditeur : </p>
       <input class="name" type="text" placeholder="Shipper name"/>
       <input class="distance" type="number" placeholder="Distance in km"/>
       <input class="volume" type="number" placeholder="Volume in m3"/>
+	  </br>
+	  <p>Option de déductibilité : </p>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
+	</br>
     <button id="compute">Compute</button>
+	
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
   </body>
+
 </html>
